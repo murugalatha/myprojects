@@ -1,0 +1,113 @@
+import java.awt.*;
+public class Student_Details extends Frame
+{
+	Student_Details() 	
+	{
+		
+		Label h1= new Label(" STUDENT DETAILS");
+		h1.setBounds(300, 50, 200, 50);
+		
+		
+		Label l1=new Label("Name");
+		l1.setBounds(100,100,200,20);
+		
+		TextField t1=new TextField();
+		t1.setBounds(400,100,200,20);
+		
+		Label l2=new Label("enter father name");
+		l2.setBounds(100,200,200,20);
+		
+		TextField t2=new TextField();
+		t2.setBounds(400,200,200,20);
+		
+		
+		Label l3=new Label("Date 0f birth");
+		l3.setBounds(100,300,200,20);
+		
+		TextField t3=new TextField();
+		t3.setBounds(400,300,200,20);
+		
+		Label l4=new Label("Religion");
+		l4.setBounds(100,400,200,20);
+		
+		CheckboxGroup cg=new CheckboxGroup();
+	    Checkbox c1=new Checkbox("hindu",cg,false);
+	    c1.setBounds(400,400,200,20);
+	    
+	    Checkbox c2=new Checkbox("christin",cg,false);
+	    c2.setBounds(400,430,200,20);
+	    
+	    
+	    Checkbox c3=new Checkbox("Muslim",cg,false);
+	    c3.setBounds(400,450,200,20);
+	    
+	    
+	    Label l5=new Label("city");
+		l5.setBounds(100,500,200,20);
+		
+		TextField t5=new TextField();
+		t5.setBounds(400,500,200,20);
+
+		
+		
+		Label l6=new Label("District");
+		l6.setBounds(100,600,200,20);
+		
+		Choice ch1=new Choice();
+		ch1.setBounds(400,600,200,20);
+		
+		ch1.add("trichy");
+		ch1.add("chennai");
+		ch1.add("thanjore");
+		ch1.add("karur");
+		ch1.add("theni");
+		ch1.add("madurai");
+		ch1.add("covai");
+		ch1.add("tripur");
+		
+		Label l7=new Label("state");
+		l7.setBounds(100,700,200,20);
+		
+		
+		Choice ch2=new Choice();
+		ch2.setBounds(400,700,200,30);
+		
+		ch2.add("india");
+		ch2.add("america");
+		ch2.add("italy");
+		ch2.add("africa");
+		ch2.add("london");
+		ch2.add("malesiya");
+		ch2.add("beijing");
+		ch2.add("kanada");		
+		
+		add(h1);
+		add(l1);
+		add(l2);
+		add(l3);
+		add(l4);
+		add(t1);
+		add(t2);
+		add(t3);
+		add(c1);
+		add(c2);
+		add(c3);
+		add(l5);
+		add(t5);
+		add(l6);
+		add(ch1);
+		add(l7);
+		add(ch2);
+		
+		setTitle("student details");
+		setSize(1000,1000);
+		setLayout(null);
+		setVisible(true);
+		
+	}
+   public static void main(String[] args)
+   {
+	Student_Details obj=new Student_Details();
+   }
+}
+
